@@ -8,6 +8,13 @@
 
 #import <MapKit/MapKit.h>
 
+@interface MBXMapViewTileOverlay : MKTileOverlay
+
+@property (nonatomic, copy) NSDictionary *tileJSONDictionary;
+@property (nonatomic) MKCoordinateRegion region;
+
+@end
+
 @protocol MBXMapViewCaching;
 
 typedef NS_ENUM(NSUInteger, MBXMapKitImageQuality) {
